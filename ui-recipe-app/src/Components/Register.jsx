@@ -17,7 +17,7 @@ function Register(props) {
         }
         else{
             setValidation({...validation, confirmpass:false, passwordLength:false})
-            axios.post('http://localhost:5500/app/v1/signup', form)
+            axios.post('https://gleaming-cuff-cod.cyclic.app/app/v1/signup', form)
             .then((data)=>{
                 navigate("/")
             }).catch(e=>{

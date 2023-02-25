@@ -13,7 +13,7 @@ function PostRecipe(props) {
     function handleForm(e){
         e.preventDefault()
         
-        axios.post("http://localhost:5500/app/v1/post", form)
+        axios.post("https://gleaming-cuff-cod.cyclic.app/app/v1/post", form)
         .then((res)=>{
             navigate("/home")
         }).catch((e)=>{

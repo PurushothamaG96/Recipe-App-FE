@@ -14,7 +14,7 @@ useEffect(()=>{
 handleRecipe()
 }, [])
 const handleRecipe = ()=>{
-    axios.get("http://localhost:5500/app/v1/post")
+    axios.get("https://gleaming-cuff-cod.cyclic.app/app/v1/post")
     .then((res)=>{
         setArr(res.data.data)
     }).catch(e=>{
@@ -32,7 +32,7 @@ function handleSearch(){
         handleRecipe()
     }
     else{
-    axios.get(`http://localhost:5500/app/v1/post/${search}`)
+    axios.get(`https://gleaming-cuff-cod.cyclic.app/app/v1/post/${search}`)
     .then((res)=>{
         setArr(res.data.data)
     }).catch(e=>{

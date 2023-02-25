@@ -8,7 +8,7 @@ function Login(props) {
     const handleSubmit=(e)=>{
         e.preventDefault()
             if(form.email && form.password){
-                axios.post('http://localhost:5500/app/v1/signin', form)
+                axios.post('https://gleaming-cuff-cod.cyclic.app/app/v1/signin', form)
             .then((data)=>{
                 console.log(data.data.message)
                 localStorage.setItem("recipe", JSON.stringify(data.data.message))
